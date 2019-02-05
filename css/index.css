@@ -1,0 +1,89 @@
+:root {
+    --text-color: #4D4D4D;
+    --bg-dark: #EAE5E5;
+    --bg-light: #F5F3F3;
+}
+
+body {
+    margin-top: 10vh;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+}
+
+header .title {
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+}
+
+nav a.active {
+    background-color: var(--bg-dark);
+}
+
+#content, #objective {
+    margin-top: 5vh;
+}
+
+#content img {
+    margin-top: 20px;
+}
+
+#content .title {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 0 -10px 0;
+}
+
+#content .subtitle {
+    font-size: 30px;
+}
+
+#content .button {
+    color: var(--text-color);
+    border-radius: 0;
+    font-size: 14px;
+}
+
+#objective .title {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--bg-dark);
+    padding: 5vh 0;
+}
+
+footer .title {
+    font-size: 24px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .icons img {
+    margin-left: 10px;
+}
