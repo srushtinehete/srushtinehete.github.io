@@ -44,6 +44,7 @@ nav a.active {
 footer {
     background-color: var(--bg-dark);
     padding: 5vh 0;
+    margin-top: 5vh;
 }
 
 footer .title {
@@ -61,7 +62,7 @@ footer .icons img {
 
 /* Home */
 #content, #objective {
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 #content img {
@@ -80,7 +81,6 @@ footer .icons img {
 
 #content .button {
     color: var(--text-default);
-    border-radius: 0;
     font-size: 14px;
 }
 
@@ -92,7 +92,7 @@ footer .icons img {
 
 /* CV */
 #heading {
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 #heading .title {
@@ -129,4 +129,29 @@ footer .icons img {
 
 #cv ul, #cv li {
     margin: 0;
+}
+
+/* Contact */
+.contact {
+    margin: 10px 0;
+}
+
+.contact > .key  {
+    font-style: italic;
+    color: var(--text-light);
+    margin: 0 10px;
+}
+
+form #submit {
+    color: var(--text-default);
+    font-size: 14px;
+}
+
+#intouch {
+    font-size: 18px;
+    font-style: italic;
+}
+
+textarea {
+    height: 20vh;
 }
