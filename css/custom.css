@@ -1,0 +1,132 @@
+:root {
+    --text-default: #4D4D4D;
+    --text-light: #8B8B8B;
+    --bg-dark: #EAE5E5;
+    --bg-light: #F5F3F3;
+}
+
+body {
+    margin-top: 10vh;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-default);
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+}
+
+header .title {
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--text-default);
+}
+
+nav a:hover {
+    background-color: var(--bg-light);
+    color: var(--text-default);
+}
+
+nav a.active {
+    background-color: var(--bg-dark);
+}
+
+footer {
+    background-color: var(--bg-dark);
+    padding: 5vh 0;
+}
+
+footer .title {
+    font-size: 24px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .icons img {
+    margin-left: 10px;
+}
+
+/* Home */
+#content, #objective {
+    margin-top: 5vh;
+}
+
+#content img {
+    margin-top: 20px;
+}
+
+#content .title {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 0 -10px 0;
+}
+
+#content .subtitle {
+    font-size: 30px;
+}
+
+#content .button {
+    color: var(--text-default);
+    border-radius: 0;
+    font-size: 14px;
+}
+
+#objective .title {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* CV */
+#heading {
+    margin-top: 5vh;
+}
+
+#heading .title {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#month {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+#cv .header {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#cv .content:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#cv .title {
+    font-weight: bold;
+}
+
+#cv span:not(.subtitle):not(.title), li {
+    color: var(--text-light);
+}
+
+#cv .skills-heading {
+    font-style: italic;
+}
+
+#cv ul, #cv li {
+    margin: 0;
+}
