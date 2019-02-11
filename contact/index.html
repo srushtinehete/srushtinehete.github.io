@@ -49,12 +49,12 @@
         </div>
         <div class="six columns">
             <p id="intouch">Get in Touch!</p>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Name" class="u-full-width">
+            <form>
+                <input type="text" name="uname" id="uname" placeholder="Name" class="u-full-width">
                 <input type="email" name="email" id="email" placeholder="Email" class="u-full-width">
                 <input type="text" name="subject" id="subject" placeholder="Subject" class="u-full-width">
                 <textarea name="message" id="message" rows="10" placeholder="Message" class="u-full-width"></textarea>
-                <button id="submit" disabled>Coming Soon!</button>
+                <button id="submit">Send</button>
             </form>
         </div>
     </div>
@@ -74,6 +74,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        submit.addEventListener('click', event => {
+            event.preventDefault()
+            let url = new URL('mailto:srushtinehete@gmail.com')
+            url.searchParams.set('subject', encodeURI(subject.value))
+            let body =
+                `Name: ${uname.value}
+                Email: ${email.value}
+                Message:
+                ${message.value}`
+            url.searchParams.set('body', encodeURI(body))
+            location.assign(url)
+        })
+    </script>
 </body>
 
 </html>
