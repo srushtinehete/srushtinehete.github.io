@@ -156,7 +156,7 @@ textarea {
     height: 20vh;
 }
 
-/* Project */
+/* Projects */
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +166,7 @@ textarea {
 
 .item {
     margin: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/project/thumbnails.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/project/kettuvalams.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -188,4 +188,27 @@ textarea {
 
 .item:hover > span {
     padding-bottom: 15px;
+}
+
+/* Project */
+#project {
+    margin-top: 10vh;
+}
+
+.siema {
+    border: solid 1px #bbb;
+}
+
+.description {
+    margin: 10px;
+}
+
+#carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 5vh;
 }
