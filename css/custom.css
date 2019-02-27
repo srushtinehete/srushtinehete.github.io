@@ -166,7 +166,6 @@ textarea {
 
 .item {
     margin: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/project/kettuvalams.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -190,6 +189,11 @@ textarea {
     padding-bottom: 15px;
 }
 
+#portfolio {
+    margin-top: 5vh;
+    text-align: center;
+}
+
 /* Project */
 #project {
     margin-top: 10vh;
@@ -201,6 +205,7 @@ textarea {
 
 .description {
     margin: 10px;
+    font-weight: bold;
 }
 
 #carousel {
@@ -211,4 +216,8 @@ textarea {
 
 #info {
     margin-top: 5vh;
+}
+
+.siema img {
+    width: 100%;
 }

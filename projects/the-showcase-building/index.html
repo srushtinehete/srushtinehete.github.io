@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Srushti Nehete</title>
+
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="author" content="Srushti Nehete">
+    <meta name="keywords" content="portfolio, srushti nehete, architecture">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+</head>
+
+<body class="">
+    <header class="container">
+        <div class="six columns">
+            <span class="title">SRUSHTI NEHETE</span>
+        </div>
+        <nav class="six columns">
+            <a href="/">HOME</a>
+            <a href="/cv">CV</a>
+            <a href="/projects">PROJECTS</a>
+            <a href="/contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="container" id="project">
+        <div class="siema">
+            <div>
+                <img src="showcase1.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase2.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase3.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase4.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase5.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase6.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase7.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase8.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase9.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase10.jpg" alt="">
+                <span class="description"></span>
+            </div>
+            <div>
+                <img src="showcase11.jpg" alt="">
+                <span class="description"></span>
+            </div>
+        </div>
+        <div id="carousel">
+            <button id="prev">prev</button>
+            <span id="page">1/12</span> <!-- Manually initialise paginator with values -->
+            <button id="next">next</button>
+        </div>
+
+        <div class="row" id="info">
+            <div class="nine columns">
+                <p>The Showcase Building at The School of the Art Institute of Chicago will, for the first time, unite
+                    technical and expressive studios under one roof.</p>
+
+                <p><strong>The building form will primarily address the specific challenges of the site, such as light
+                        and verticality, then inform a sense of interconnectivity between patrons through physical and
+                        visual means.</strong></p>
+
+                <p>The deep and slender building calls for floor plan flexibility, visual relief and thoroughly designed
+                    daylighting devices. The Showcase Building is designed with each of these aspects in mind, using the
+                    assistance of quantitative simulation tools such as Grasshopper, Sefaira and Diva. The lightwell
+                    creates a physical disconnection between studios, the balconies and other showcase boxes were
+                    created to develop a dynamic between studios where students can see one another, converse, and
+                    occupy one large mutual space.</p>
+
+                <p>The first few floors have facilities open to the public where patrons can visit the Show Store to
+                    purchase student work, explore exhibitions or go to the cafe. Studios will take up a majority of the
+                    building program and have split levels, balconies and mezzanines to increase connectivity between
+                    departments. This includes teaching and exhibition of students from Architecture, Interior Design,
+                    Ceramics, Painting and Drawing, Graphic Design, etc. Intermittent levels will include recreational
+                    spaces, such as a lounge, a supply shop, and a gym. The highest floors are reserved for a library,
+                    seminar space, offices, conference rooms and review spaces.</p>
+
+                <p>The spaces fit themselves into a form that best addresses the demands of the site constraints, yet
+                    push the built boundary of buildings lining Michigan Ave, leaning over the sidewalk as to truly
+                    showcase student work, ultimately engaging the public to evoke curiosity and intrigue.</p>
+            </div>
+            <div class="three columns">
+                <p>Studio Guide:<br>
+                    <em>Professor Scott Murray</em></p>
+
+                <p>Team:<br>
+                    <em>Srushti Nehete<br>
+                        Shannon Fitzgerald</em></p>
+
+                <p style="text-align: left">Team:<br>
+                    <em><a href="https://cwarch.org/cwa-scholarship-2/cwa-scholarship-winner-announcement/"
+                            target="_blank">Chicago Women in Architecture Scholarship</a><br>
+                        Second Place<br>
+                        <a href="https://arch.illinois.edu/node/766" target="_blank">The Graduate Studio Excellence
+                            Awards</a><br>
+                        First Place</em>
+                </p>
+            </div>
+        </div>
+
+        <a href="/projects" class="button">Back To Projects</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="six columns">
+                <span class="title">SRUSHTI NEHETE</span>
+            </div>
+            <div class="icons" class="six columns">
+                <a href="https://www.linkedin.com/in/srushtinehete/" target="_blank"><img
+                        src="/images/icons8-linkedin-2-filled.svg" alt="LinkedIn"></a>
+                <a href="https://www.pinterest.com/srushtinehete/" target="_blank"><img
+                        src="/images/icons8-pinterest.svg" alt="Pinterest"></a>
+                <a href="https://www.instagram.com/srushn/?hl=en" target="_blank"><img
+                        src="/images/icons8-instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/siema.min.js"></script>
+    <script>
+        const siema = new Siema({
+            loop: true,
+            onChange: () => {
+                page.innerText = siema.currentSlide + 1 + '/' + siema.innerElements.length;
+            }
+        });
+        prev.addEventListener('click', () => siema.prev())
+        next.addEventListener('click', () => siema.next())
+    </script>
+</body>
+
+</html>
