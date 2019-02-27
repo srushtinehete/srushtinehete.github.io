@@ -155,3 +155,69 @@ form #submit {
 textarea {
     height: 20vh;
 }
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.item {
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.item > span {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-bottom: solid 2px white;
+    padding-bottom: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.item:hover > span {
+    padding-bottom: 15px;
+}
+
+#portfolio {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/* Project */
+#project {
+    margin-top: 10vh;
+}
+
+.siema {
+    border: solid 1px #bbb;
+}
+
+.description {
+    margin: 10px;
+    font-weight: bold;
+}
+
+#carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 5vh;
+}
+
+.siema img {
+    width: 100%;
+}
