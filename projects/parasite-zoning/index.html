@@ -107,16 +107,7 @@
     </footer>
 
     <script src="/js/siema.min.js"></script>
-    <script>
-        const siema = new Siema({
-            loop: true,
-            onChange: () => {
-                page.innerText = siema.currentSlide + 1 + '/' + siema.innerElements.length;
-            }
-        });
-        prev.addEventListener('click', () => siema.prev())
-        next.addEventListener('click', () => siema.next())
-    </script>
+    <script src="/js/custom.js"></script>
 </body>
 
 </html>
