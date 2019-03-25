@@ -3,6 +3,8 @@
     --text-light: #8B8B8B;
     --bg-dark: #EAE5E5;
     --bg-light: #F5F3F3;
+    --image-overlay: #0000004D;
+    --transparent: #00000000;
 }
 
 body {
